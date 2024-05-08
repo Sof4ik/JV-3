@@ -1,0 +1,52 @@
+import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.HashSet;
+import java.util.HashMap;
+
+public class Main {
+    public static void main(String[] args) {
+        // A. Creating a new ArrayList, adding some countries, and printing the collection
+        ArrayList<String> countries = new ArrayList<>();
+        countries.add("USA");
+        countries.add("Canada");
+        countries.add("France");
+
+        System.out.println("Countries: " + countries);
+
+        // B. Adding a specified element to the end of a linked list
+        LinkedList<String> linkedList = new LinkedList<>();
+        linkedList.add("Paris");
+        linkedList.add("New York");
+        linkedList.add("Toronto");
+
+        System.out.println("Before adding to linked list: " + linkedList);
+
+        linkedList.addLast("London");
+
+        System.out.println("After adding to linked list: " + linkedList);
+
+        // C. Adding a specified element to the end of a HashSet
+        HashSet<String> hashSet = new HashSet<>();
+        hashSet.add("London");
+        hashSet.add("Berlin");
+        hashSet.add("Rome");
+
+        System.out.println("Before adding to hash set: " + hashSet);
+
+        hashSet.add("Tokyo");
+
+        System.out.println("After adding to hash set: " + hashSet);
+
+        // D. Associating a specified value with a specified key in a HashMap
+        HashMap<Integer, String> hashMap = new HashMap<>();
+        hashMap.put(1, "English");
+        hashMap.put(2, "French");
+        hashMap.put(3, "Spanish");
+
+        System.out.println("Before linking in hash map: " + hashMap);
+
+        hashMap.put(4, "Italian");
+
+        System.out.println("After linking in hash map: " + hashMap);
+    }
+}
